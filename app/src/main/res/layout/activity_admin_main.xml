@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminMainActivity"
+    android:background="@drawable/app_back">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:src="@drawable/app_logo"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/new_order_Activity"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="New Orders"
+        android:fontFamily="@font/hero_regular"
+        android:background="@drawable/btn_style3"
+        android:textColor="@color/blue2_1"
+        android:layout_centerInParent="true"
+        />
+    <Button
+        android:id="@+id/add_new_product_Activity"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Add new Product"
+        android:textStyle="bold"
+        android:fontFamily="@font/hero_regular"
+        android:background="@drawable/btn_style3"
+        android:textColor="@color/blue2_1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/new_order_Activity"
+        android:layout_centerInParent="true"
+        />
+    <Button
+        android:id="@+id/view_all_product_Activity"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="View All Products"
+        android:fontFamily="@font/hero_regular"
+        android:background="@drawable/btn_style3"
+        android:textColor="@color/blue2_1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/add_new_product_Activity"
+        android:layout_centerInParent="true"
+        />
+    <ImageView
+        android:id="@+id/logout_admin"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/logout_admin"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+
+        android:layout_below="@+id/logout_admin"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/white"
+        android:layout_marginRight="12dp"
+        android:fontFamily="@font/hero_regular"
+        />
+</RelativeLayout>

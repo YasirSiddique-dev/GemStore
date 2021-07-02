@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "684644634155",
+    "firebase_url": "https://jewelry-store-9cac2.firebaseio.com",
+    "project_id": "jewelry-store-9cac2",
+    "storage_bucket": "jewelry-store-9cac2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684644634155:android:bd7cb601210d4d8356e46e",
+        "android_client_info": {
+          "package_name": "com.example.jewelrystore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "684644634155-s0t46re77i0dd557m7r1kjj82pkqclk2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT2SnBvpqyA2i5VDmkaKkO9B5tCaEbd6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684644634155-s0t46re77i0dd557m7r1kjj82pkqclk2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

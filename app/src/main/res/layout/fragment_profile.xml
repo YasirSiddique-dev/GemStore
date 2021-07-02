@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment"
+   >
+    <Button
+        android:id="@+id/logout"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_style"
+        android:layout_alignParentRight="true"
+        android:fontFamily="@font/hero_regular"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="3dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile_pic"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+        >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/crd"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:elevation="10dp"
+        android:layout_marginTop="15sp"
+        android:layout_below="@id/profile_image"
+        android:padding="5dp"
+       >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/usr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:fontFamily="@font/hero_regular"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                />
+            <View
+                android:id="@+id/viw"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#c0c0c0"
+                android:layout_below="@id/usr"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_marginTop="50dp"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/hero_regular"
+                android:layout_marginRight="30dp"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile name" />
+            <TextView
+                android:id="@+id/eml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Address"
+                android:fontFamily="@font/hero_regular"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:layout_below="@id/viw"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                />
+            <View
+                android:id="@+id/viw2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#c0c0c0"
+                android:layout_below="@id/eml"/>
+            <TextView
+                android:id="@+id/email"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/hero_regular"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile email"
+                android:layout_below="@id/viw"/>
+            <TextView
+                android:id="@+id/phn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:fontFamily="@font/hero_regular"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:layout_below="@id/viw2"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+                android:id="@+id/phone"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hero_regular"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:textSize="14sp"
+                android:text="Profile phone"
+                android:layout_below="@id/viw2"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/update_profile"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/crd"
+        android:background="@drawable/btn_style"
+        android:text="Update profile"
+        android:textStyle="bold"
+        android:fontFamily="@font/hero_regular"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProfileActivity">
+<com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/appbar_setting"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/close_btn8"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back_arrow"
+                android:tint="@color/white"
+                android:layout_alignParentStart="true"
+                />
+            <TextView
+                android:id="@+id/update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/hero_regular"
+                android:text="Update"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+</com.google.android.material.appbar.AppBarLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/update_profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="3dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile_pic"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+    >
+    <TextView
+        android:id="@+id/change_profile"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hero_regular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/update_profile_image"
+        android:text="Change Profile picture"
+        />
+    <EditText
+        android:id="@+id/upd_first_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:lines="1"
+        android:maxLines="1"
+        android:maxLength="15"
+        android:fontFamily="@font/hero_regular"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:paddingLeft="15dp"
+        android:hint="First Name"
+        android:paddingRight="15dp"
+        android:background="@drawable/field_style"
+        android:layout_below="@id/change_profile"
+        />
+    <EditText
+        android:id="@+id/upd_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:lines="1"
+        android:maxLines="1"
+        android:maxLength="15"
+        android:fontFamily="@font/hero_regular"
+        android:layout_marginEnd="15dp"
+        android:paddingLeft="15dp"
+        android:hint="Last Name"
+        android:paddingRight="15dp"
+        android:background="@drawable/field_style"
+        android:layout_below="@id/upd_first_name"
+        />
+    <EditText
+        android:id="@+id/upd_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/hero_regular"
+        android:layout_marginStart="15dp"
+        android:lines="1"
+        android:maxLines="1"
+        android:maxLength="30"
+        android:layout_marginEnd="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:hint="Email Address"
+        android:background="@drawable/field_style"
+        android:layout_below="@id/upd_last_name"
+        />
+    <EditText
+        android:id="@+id/upd_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/field_style"
+        android:hint="Phone Number"
+        android:fontFamily="@font/hero_regular"
+        android:layout_below="@id/upd_email"
+        />
+</RelativeLayout>

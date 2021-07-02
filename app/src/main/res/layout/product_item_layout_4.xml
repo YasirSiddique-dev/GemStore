@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="102dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/admin_item_pic2"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/img7"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#f5f5f7"/>
+            <TextView
+                android:id="@+id/admin_item_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="item_name"
+                android:fontFamily="@font/hero_regular"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/admin_item_pic2"
+                />
+            <TextView
+                android:id="@+id/admin_item_desc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="item_description"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/hero_regular"
+                android:layout_below="@id/admin_item_name2"
+                android:layout_toRightOf="@id/admin_item_pic2"
+                />
+            <ImageView
+                android:id="@+id/admin_item_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bin"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="20dp"
+                />
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

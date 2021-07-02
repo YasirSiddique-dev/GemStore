@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmFinalOrderActivity"
+    android:background="@color/light_grey">
+
+
+    <TextView
+        android:id="@+id/confirm_order_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/hero_regular"
+        android:text="Please confirm your Shipment Details"
+        android:textColor="@color/blue2"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/confirm_order_fname"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/field_style"
+        android:drawableTint="@color/grey"
+        android:ems="16"
+        android:hint="First Name"
+        android:fontFamily="@font/hero_regular"
+        android:paddingLeft="20dp"
+        android:layout_below="@id/confirm_order_txt"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+         />
+    <EditText
+        android:id="@+id/confirm_order_lname"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/field_style"
+        android:drawableTint="@color/grey"
+        android:ems="16"
+        android:fontFamily="@font/hero_regular"
+        android:hint="Last Name"
+        android:paddingLeft="20dp"
+        android:layout_below="@id/confirm_order_fname"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:id="@+id/confirm_order_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/field_style"
+        android:drawableTint="@color/grey"
+        android:ems="16"
+        android:fontFamily="@font/hero_regular"
+        android:hint="Phone Number"
+        android:paddingLeft="20dp"
+        android:layout_below="@id/confirm_order_lname"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:id="@+id/confirm_order_email"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/field_style"
+        android:drawableTint="@color/grey"
+        android:ems="16"
+        android:fontFamily="@font/hero_regular"
+        android:hint="Email Address"
+        android:paddingLeft="20dp"
+        android:layout_below="@id/confirm_order_phone"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:id="@+id/confirm_order_h_address"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/field_style"
+        android:drawableTint="@color/grey"
+        android:ems="16"
+        android:fontFamily="@font/hero_regular"
+        android:hint="Home Address"
+        android:paddingLeft="20dp"
+        android:layout_below="@id/confirm_order_email"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:id="@+id/confirm_order_City"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:background="@drawable/field_style"
+        android:drawableTint="@color/grey"
+        android:ems="16"
+        android:fontFamily="@font/hero_regular"
+        android:hint="City"
+        android:paddingLeft="20dp"
+        android:layout_below="@id/confirm_order_h_address"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/btn_confirmOrder"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/hero_regular"
+        android:background="@drawable/btn_style"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_below="@id/confirm_order_City"
+        android:layout_marginTop="60dp"
+        android:text="Confirm Order"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+
+        />
+
+</RelativeLayout>

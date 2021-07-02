@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_marginTop="10dp"
+android:layout_marginLeft="15dp"
+android:layout_marginRight="15dp"
+    >
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    app:cardBackgroundColor="@color/grey2"
+    app:cardCornerRadius="20dp"
+    android:elevation="6dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/order_date"
+            android:layout_width="wrap_content"
+            android:text="order date"
+            android:textSize="12sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/hero_regular"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Order Date:"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/order_date"
+            android:fontFamily="@font/hero_regular"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Price 5000"
+            android:layout_marginLeft="3dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/hero_regular"
+            android:textStyle="bold"
+            android:layout_marginTop="50sp"
+            android:textSize="24sp"
+            />
+        <TextView
+            android:id="@+id/order_confirmation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmation"
+            android:textSize="14dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="80dp"
+
+            />
+        <TextView
+            android:id="@+id/order_Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hero_regular"
+            android:text="Order id 233445656"
+            android:textSize="14sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/order_price"
+            />
+        <TextView
+            android:id="@+id/order_shipment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hero_regular"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:text="Order Status Not Shipped"
+            android:layout_below="@id/order_Id"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+</RelativeLayout>
